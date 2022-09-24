@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Git Repo Sync
     steps:
-    - uses: actions/checkout@main
+    - uses: actions/checkout@v2
       with:
         fetch-depth: 0
     - uses: greatoyster/ov_spline_se3@main
@@ -19,4 +19,4 @@ jobs:
         # Such as wangchucheng
         target-username: ${{ secrets.greatoyster }}
           # You can store token in your project's 'Setting > Secrets' and reference the name here. Such as ${{ secrets.ACCESS\_TOKEN }}
-        # target-token: ${{ secrets.TARGET_TOKEN }}
+        target-token: ${{ secrets.glpat-3JpHQfraisZ8p9gbjUcu }}
